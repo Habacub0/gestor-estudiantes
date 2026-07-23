@@ -10,14 +10,14 @@
   <h1>Registro de Estudiantes</h1>
 
   <form id="formulario">
-    <input name="nombre" placeholder="Nombre" required>
-    <input name="correo" type="email" placeholder="Correo" required>
-    <select name="jornada">
-      <option value="matutina">Matutina</option>
-      <option value="vespertina">Vespertina</option>
-      <option value="nocturna">Nocturna</option>
+    <input class="campoNombre" name="nombre" placeholder="Nombre" required>
+    <input class="campoCorreo" name="correo" type="email" placeholder="Correo" required>
+    <select class="cuadroJornada" name="jornada">
+      <option value="Matutina">Matutina</option>
+      <option value="Vespertina">Vespertina</option>
+      <option value="Nocturna">Nocturna</option>
     </select>
-    <button type="submit">Agregar</button>
+    <button class="btn-agregar" type="submit">Agregar</button>
   </form>
 
   <p id="error" style="color:red"></p>
