@@ -6,7 +6,7 @@ export interface IPersona {
 }
 
 // Tipo personalizado con type (unión literal)
-export type Jornada = "matutina" | "vespertina" | "nocturna";
+export type Jornada = "Matutina" | "Vespertina" | "Nocturna ";
 
 // Tipo genérico para respuestas
 export type Resultado<T> = {
