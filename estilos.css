@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(180deg, #665cf5, #e38bf5);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1{
+    text-shadow: 2px 2px 4px rgba(173, 12, 12, 0.5);
+    padding: 20px;
+    color:#e38bf5;
+    opacity: 0;
+    transform: translateY(-20px);
+    
+
+   
+}
+ul{
+    list-style: none;
+    color: rgb(39, 4, 240);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+   
+}
+
+@keyframes aparecer{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h1{
+    animation: aparecer 2s ease-in-out forwards;
+}
+
+
+.btn-agregar{
+    background: #665cf5;
+    color: #e38bf5;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.btn-agregar:hover{
+    background: #e38bf5;
+    color: #665cf5;
+    transform: scale(1.1);
+}
+
+.campoNombre, .campoCorreo{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+.cuadroJornada{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+.campoNombre:focus, .campoCorreo:focus{
+    outline: none;
+    box-shadow: 0 0 30px #9ee66e;
+}
+.cuadroJornada:focus{
+    outline: none;
+    box-shadow: 0 0 30px #9ee66e;
+}   
+
+#guardar{
+    background: #665cf5;
+    color: #e38bf5;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+#guardar:hover{
+    background: #e38bf5;
+    color: #665cf5;
+    transform: scale(1.1);
+}
