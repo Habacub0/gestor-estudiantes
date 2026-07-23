@@ -1,4 +1,4 @@
-import { IPersona, Jornada } from "./tipos.js";
+import { type IPersona, type Jornada } from "./tipos.js";
 
 // Clase base (abstracta): no se instancia directamente
 export abstract class Persona implements IPersona {
@@ -41,7 +41,7 @@ export class Estudiante extends Persona {
 
   // Implementación propia del método abstracto (POLIMORFISMO)
   descripcion(): string {
-    return `Estudiante ${this.nombre} — jornada ${this.#jornada}`;
+    return `Estudiante ${this.nombre} — Jornada ${this.#jornada}`;
   }
 }
 
